@@ -2,27 +2,7 @@
 
 > **Industrial Training Kit · Batch 2026 · Powered by DecodeLabs**
 
-A fully responsive, accessible, and production-grade frontend web application built using **pure HTML5, CSS3, and Vanilla JavaScript** — no frameworks, no libraries.
-
----
-
-## 🔴 Live Demo
-
-**👉 [View Live Site](https://YOUR-USERNAME.github.io/decodelabs-project1)**
-
-> *(Replace the link above with your GitHub Pages URL after deployment)*
-
----
-
-## 📸 Preview
-
-| Mobile | Tablet | Desktop |
-|--------|--------|---------|
-| ![Mobile](.github/preview-mobile.png) | ![Tablet](.github/preview-tablet.png) | ![Desktop](.github/preview-desktop.png) |
-
-> *(Add screenshots of your site to a `.github/` folder in your repo — highly recommended for recruiters)*
-
----
+A fully responsive, accessible, and production-grade frontend web application built using **pure HTML5, CSS3, and Vanilla JavaScript** — no frameworks, no libraries..
 
 ## 🎯 Project Overview
 
@@ -133,24 +113,6 @@ Following the DecodeLabs 6-step framework:
 
 ---
 
-## 📂 Project Structure
-
-```
-decodelabs-project1/
-│
-├── index.html          # Main HTML file (complete single-page app)
-├── README.md           # This file
-│
-└── .github/
-    ├── preview-mobile.png
-    ├── preview-tablet.png
-    └── preview-desktop.png
-```
-
-> This project is intentionally single-file as per the "master fundamentals first" mandate — all CSS and JS are embedded in `index.html`.
-
----
-
 ## 🚀 Getting Started
 
 ### View Locally
@@ -227,34 +189,8 @@ This project follows **WCAG 2.1** guidelines:
 ## 👤 Author
 
 **Your Name**
-- GitHub: [@YOUR-USERNAME](https://github.com/YOUR-USERNAME)
-- LinkedIn: [linkedin.com/in/YOUR-PROFILE](https://linkedin.com/in/YOUR-PROFILE)
-- Email: your.email@example.com
+- GitHub: [@sudhanshu00011](https://github.com/sudhanshu00011)
+- LinkedIn: [linkedin.com/in/sudhanshu-prasad-023957289](https://linkedin.com/in/sudhanshu-prasad-023957289)
+- Email: sudhanshuprasad148@gmail.com
 
 ---
-
-## 🏢 About DecodeLabs
-
-DecodeLabs is a full-stack development training program based in Greater Lucknow, India.
-
-- 🌐 [www.decodelabs.tech](https://www.decodelabs.tech)
-- 📧 decodelabs.tech@gmail.com
-- 📞 +91 89330 06408
-
----
-
-## 📄 License
-
-This project was built as part of the **DecodeLabs Industrial Training Program (Batch 2026)**.
-Feel free to use it as a reference or learning resource.
-
----
-
-<div align="center">
-
-**Built with ❤️ during DecodeLabs Internship · 2026**
-
-*"Your code determines who has access to information and how the world experiences it."*
-— DecodeLabs
-
-</div>
