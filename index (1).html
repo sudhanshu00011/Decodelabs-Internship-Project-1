@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DecodeLabs — Build The Future</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ░░ HEADER / NAV ░░ -->
+  <header>
+    <nav class="container" aria-label="Primary navigation">
+      <a href="#" class="nav__logo" aria-label="DecodeLabs Home">
+        Decode<span>Labs</span>
+      </a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="#projects" class="btn btn--primary nav__cta" aria-label="Get started">
+        Get Started
+      </a>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <nav class="nav__mobile" id="mobile-menu" aria-label="Mobile navigation">
+      <a href="#about"    onclick="closeMenu()">About</a>
+      <a href="#projects" onclick="closeMenu()">Projects</a>
+      <a href="#roadmap"  onclick="closeMenu()">Roadmap</a>
+      <a href="#contact"  onclick="closeMenu()">Contact</a>
+      <a href="#projects" class="btn btn--primary" onclick="closeMenu()">Get Started</a>
+    </nav>
+  </header>
+
+  <!-- ░░ MAIN ░░ -->
+  <main id="main-content">
+
+    <!-- ── HERO ── -->
+    <section class="hero" aria-label="Hero section" id="home">
+      <div class="container hero__inner">
+
+        <div class="hero__eyebrow">
+          <span class="tag tag--mocha">DecodeLabs · 2026</span>
+        </div>
+
+        <h1 class="hero__title">
+          Build The <em>Future.</em><br>
+          One Pixel At A Time.
+        </h1>
+
+        <p class="hero__subtitle">
+          You're stepping into the role of a Full Stack Developer.
+          Project 1 is your interface phase — master the art of
+          flexible frontends before connecting any backend.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">View Projects ↓</a>
+          <a href="#roadmap"  class="btn btn--outline">See Roadmap</a>
+        </div>
+
+        <div class="hero__stats" aria-label="Program statistics">
+          <div class="stat">
+            <span class="stat__num">6</span>
+            <span class="stat__label">Milestones</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">3</span>
+            <span class="stat__label">Core Tools</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">100%</span>
+            <span class="stat__label">Hands-On</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">∞</span>
+            <span class="stat__label">Potential</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── FEATURES / ABOUT ── -->
+    <section class="features" id="about" aria-labelledby="features-title">
+      <div class="container">
+
+        <header class="section__header reveal">
+          <p class="section__tag"><span class="tag tag--blue">The Toolkit</span></p>
+          <h2 class="section__title" id="features-title">Your Raw Materials</h2>
+          <div class="divider"></div>
+          <p class="section__subtitle">
+            No frameworks allowed. Master the fundamentals first —
+            HTML5, CSS3, and vanilla JavaScript are your only tools.
+          </p>
+        </header>
+
+        <div class="features__grid">
+
+          <article class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">🏗️</div>
+            <h3 class="feature-card__title">HTML5 — The Infrastructure</h3>
+            <p class="feature-card__text">
+              Semantic landmarks and structural meaning. Not just
+              divs — the <em>right</em> element for the right job.
+              Proper use of <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>,
+              <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code>.
+            </p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">🎨</div>
+            <h3 class="feature-card__title">CSS3 — The Skin</h3>
+            <p class="feature-card__text">
+              Responsive styling using Grid for macro layouts and
+              Flexbox for micro components. Mobile-first with
+              <code>min-width</code> breakpoints at 768px and 1024px.
+            </p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">⚙️</div>
+            <h3 class="feature-card__title">JavaScript — The Logic</h3>
+            <p class="feature-card__text">
+              Basic state management and interactive functionality.
+              Hamburger menu, scroll events, smooth reveals — no
+              libraries, pure vanilla JS.
+            </p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">📱</div>
+            <h3 class="feature-card__title">Mobile-First Design</h3>
+            <p class="feature-card__text">
+              Start with a single column, expand outwards. The web
+              is experienced on mobile first — build it that way
+              from line one.
+            </p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">♿</div>
+            <h3 class="feature-card__title">WCAG Accessibility</h3>
+            <p class="feature-card__text">
+              Strict WCAG adherence. Code for AI and screen readers.
+              Proper ARIA labels, keyboard navigation, and semantic
+              integrity throughout.
+            </p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">✨</div>
+            <h3 class="feature-card__title">2025 UI Aesthetics</h3>
+            <p class="feature-card__text">
+              Warm, grounded aesthetics using the DecodeLabs 2025
+              palette — Mocha Mousse, Ethereal Blue, and Moonlit
+              Grey. Max 2 font families, 3 weights.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTENT GRID + SIDEBAR ── -->
+    <section class="content-section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+
+        <header class="section__header reveal">
+          <p class="section__tag"><span class="tag tag--mocha">Projects</span></p>
+          <h2 class="section__title" id="projects-title">Internship Milestones</h2>
+          <div class="divider"></div>
+          <p class="section__subtitle">
+            Every project builds on the last. Complete Project 1 to
+            unlock what comes next.
+          </p>
+        </header>
+
+        <div class="content-layout">
+
+          <!-- Main content grid -->
+          <div class="content-grid" role="list">
+
+            <article class="card reveal" role="listitem">
+              <div class="card__thumb card__thumb--mocha" aria-hidden="true">🖥️</div>
+              <div class="card__body">
+                <div class="card__meta">
+                  <span class="tag tag--mocha">Active</span>
+                  <span class="tag tag--grey">Week 1</span>
+                </div>
+                <h3 class="card__title">Project 1: Responsive Frontend Interface</h3>
+                <p class="card__excerpt">
+                  Create a fully responsive frontend using HTML, CSS Grid,
+                  Flexbox, and vanilla JavaScript. Mobile-first approach,
+                  clean and accessible UI.
+                </p>
+                <div class="card__footer">
+                  <div class="card__author">
+                    <div class="card__avatar" aria-hidden="true">DL</div>
+                    <span>DecodeLabs</span>
+                  </div>
+                  <span class="card__read-more">Explore →</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal" role="listitem" aria-label="Locked project">
+              <div class="card__thumb card__thumb--blue" aria-hidden="true">🔗</div>
+              <div class="card__body">
+                <div class="card__meta">
+                  <span class="tag tag--grey">Locked</span>
+                  <span class="tag tag--grey">Week 2</span>
+                </div>
+                <h3 class="card__title">Project 2: API Integration Layer</h3>
+                <p class="card__excerpt">
+                  Connect your frontend to real-world APIs. Handle async
+                  data, loading states, and error boundaries using the
+                  Fetch API.
+                </p>
+                <div class="card__footer">
+                  <div class="card__author">
+                    <div class="card__avatar" aria-hidden="true">DL</div>
+                    <span>DecodeLabs</span>
+                  </div>
+                  <span class="card__read-more">Unlock →</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal" role="listitem" aria-label="Locked project">
+              <div class="card__thumb card__thumb--grey" aria-hidden="true">🗄️</div>
+              <div class="card__body">
+                <div class="card__meta">
+                  <span class="tag tag--grey">Locked</span>
+                  <span class="tag tag--grey">Week 3</span>
+                </div>
+                <h3 class="card__title">Project 3: Backend & Database</h3>
+                <p class="card__excerpt">
+                  Build a Node.js server, design a database schema, and
+                  connect your full application — front to back.
+                </p>
+                <div class="card__footer">
+                  <div class="card__author">
+                    <div class="card__avatar" aria-hidden="true">DL</div>
+                    <span>DecodeLabs</span>
+                  </div>
+                  <span class="card__read-more">Unlock →</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="sidebar" aria-label="Sidebar">
+
+            <div class="widget">
+              <h3 class="widget__title">Top Resources</h3>
+              <ul class="widget__list" role="list">
+                <li class="widget__item">
+                  <span class="widget__item-num" aria-hidden="true">01</span>
+                  <div>
+                    <strong>MDN Web Docs</strong><br>
+                    The definitive HTML & CSS reference
+                  </div>
+                </li>
+                <li class="widget__item">
+                  <span class="widget__item-num" aria-hidden="true">02</span>
+                  <div>
+                    <strong>CSS Tricks — Grid Guide</strong><br>
+                    Complete CSS Grid visual reference
+                  </div>
+                </li>
+                <li class="widget__item">
+                  <span class="widget__item-num" aria-hidden="true">03</span>
+                  <div>
+                    <strong>Visily / Balsamiq</strong><br>
+                    Wireframing tools for your blueprint
+                  </div>
+                </li>
+                <li class="widget__item">
+                  <span class="widget__item-num" aria-hidden="true">04</span>
+                  <div>
+                    <strong>WCAG 2.1 Checklist</strong><br>
+                    Accessibility audit reference
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="widget">
+              <h3 class="widget__title">Skills You'll Earn</h3>
+              <div class="tag-cloud" role="list">
+                <span class="tag tag--mocha" role="listitem">HTML5</span>
+                <span class="tag tag--blue"  role="listitem">CSS Grid</span>
+                <span class="tag tag--grey"  role="listitem">Flexbox</span>
+                <span class="tag tag--mocha" role="listitem">JavaScript</span>
+                <span class="tag tag--blue"  role="listitem">Responsive</span>
+                <span class="tag tag--grey"  role="listitem">WCAG</span>
+                <span class="tag tag--mocha" role="listitem">Mobile-First</span>
+                <span class="tag tag--blue"  role="listitem">Semantic HTML</span>
+              </div>
+            </div>
+
+            <div class="widget">
+              <h3 class="widget__title">Qualification Criteria</h3>
+              <ul class="widget__list" role="list">
+                <li class="widget__item">
+                  <span class="widget__item-num" aria-hidden="true">✓</span>
+                  <div>Complete Project 1 to unlock future projects</div>
+                </li>
+                <li class="widget__item">
+                  <span class="widget__item-num" aria-hidden="true">✓</span>
+                  <div>All projects verified for quality by the team</div>
+                </li>
+                <li class="widget__item">
+                  <span class="widget__item-num" aria-hidden="true">✓</span>
+                  <div>Mandatory for every intern — no skipping</div>
+                </li>
+              </ul>
+            </div>
+
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ROADMAP ── -->
+    <section class="roadmap" id="roadmap" aria-labelledby="roadmap-title">
+      <div class="container">
+
+        <header class="section__header reveal">
+          <p class="section__tag"><span class="tag tag--blue">Execution Plan</span></p>
+          <h2 class="section__title" id="roadmap-title">The 6-Step Roadmap</h2>
+          <div class="divider"></div>
+          <p class="section__subtitle">
+            Follow this exact sequence to build Project 1 the right way,
+            the professional way.
+          </p>
+        </header>
+
+        <div class="roadmap__steps" role="list">
+
+          <div class="step reveal" role="listitem">
+            <div class="step__num" aria-label="Step 1">1</div>
+            <div class="step__content">
+              <h3 class="step__title">Discovery — Define "How Might We"</h3>
+              <p class="step__desc">
+                Research your user. Create an Empathy Map. We do not guess —
+                we research pain points before writing a single line of code.
+              </p>
+            </div>
+          </div>
+
+          <div class="step reveal" role="listitem">
+            <div class="step__num" aria-label="Step 2">2</div>
+            <div class="step__content">
+              <h3 class="step__title">Wireframe — Grayscale, Mobile-First</h3>
+              <p class="step__desc">
+                Low-fidelity sketches using Visily, Balsamiq, or pen and paper.
+                Golden Rule: if it doesn't work in grayscale, color won't fix it.
+              </p>
+            </div>
+          </div>
+
+          <div class="step reveal" role="listitem">
+            <div class="step__num" aria-label="Step 3">3</div>
+            <div class="step__content">
+              <h3 class="step__title">Semantics — HTML Landmarks</h3>
+              <p class="step__desc">
+                Write the HTML structure first using semantic elements.
+                Proper semantics give screen readers and AI a Table of Contents.
+              </p>
+            </div>
+          </div>
+
+          <div class="step reveal" role="listitem">
+            <div class="step__num" aria-label="Step 4">4</div>
+            <div class="step__content">
+              <h3 class="step__title">Style — CSS Grid / Flex &amp; 2025 Palette</h3>
+              <p class="step__desc">
+                Apply CSS Grid for page-level layout and Flexbox for components.
+                Use the Mocha Mousse, Ethereal Blue, and Moonlit Grey palette.
+              </p>
+            </div>
+          </div>
+
+          <div class="step reveal" role="listitem">
+            <div class="step__num" aria-label="Step 5">5</div>
+            <div class="step__content">
+              <h3 class="step__title">Logic — State &amp; Interactivity</h3>
+              <p class="step__desc">
+                Add vanilla JavaScript for hamburger menus, scroll effects,
+                and any dynamic state management your UI requires.
+              </p>
+            </div>
+          </div>
+
+          <div class="step reveal" role="listitem">
+            <div class="step__num" aria-label="Step 6">6</div>
+            <div class="step__content">
+              <h3 class="step__title">Audit — LCP/CLS &amp; Accessibility</h3>
+              <p class="step__desc">
+                Run Lighthouse. Fix performance metrics (LCP, CLS). Validate
+                WCAG compliance. Only then is your project ready for review.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA BANNER ── -->
+    <section class="cta-section" aria-label="Call to action">
+      <div class="container" style="position:relative;z-index:1;">
+        <h2>You Are The <em>Architect.</em></h2>
+        <p>
+          Your code determines who has access to information and how
+          the world experiences it. Start building — right now.
+        </p>
+        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+          <a href="#projects" class="btn btn--light">View Projects</a>
+          <a href="#roadmap"  class="btn btn--outline" style="border-color:rgba(255,255,255,0.4);color:white;">See Roadmap</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer id="contact" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <div class="nav__logo">Decode<span>Labs</span></div>
+          <p>
+            Building the next generation of Full Stack Developers
+            through hands-on, real-world projects. Greater Lucknow, India.
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <h4>Program</h4>
+          <ul role="list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Resources</h4>
+          <ul role="list">
+            <li><a href="https://developer.mozilla.org" target="_blank" rel="noopener">MDN Docs</a></li>
+            <li><a href="https://css-tricks.com" target="_blank" rel="noopener">CSS-Tricks</a></li>
+            <li><a href="https://web.dev" target="_blank" rel="noopener">Web.dev</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul role="list">
+            <li><a href="mailto:decodelabs.tech@gmail.com">decodelabs.tech@gmail.com</a></li>
+            <li><a href="tel:+918933006408">+91 89330 06408</a></li>
+            <li><a href="https://www.decodelabs.tech" target="_blank" rel="noopener">www.decodelabs.tech</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 DecodeLabs. All rights reserved.</span>
+        <span>Batch 2026 · Project 1 · Powered by DecodeLabs</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="back-top" aria-label="Back to top" title="Back to top">↑</button>
+
+  <!-- ░░ JAVASCRIPT ░░ -->
+  <script src="app.js"></script>
+
+</body>
+</html>
